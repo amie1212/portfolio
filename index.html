@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Amie">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#f8fafc" id="theme-color-meta">
+  <meta name="description" content="Personal portfolio and resume website of Amie. Showcase of skills, projects, and experience.">
+  <title>Amie | Portfolio & Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">Amie<span>.dev</span></a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="btn-icon mobile-toggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">👋 Welcome to my portfolio</div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Amie</span>
+          </h1>
+          <p class="hero-subtitle">Student & Aspiring Software Developer</p>
+          <p class="hero-description">
+            Passionate about crafting intuitive, high-performance web experiences and solving real-world problems through clean code and modern design.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:amie@example.com" class="social-link" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-circle">
+              <span class="avatar-initials">A</span>
+            </div>
+            <div class="avatar-status">
+              <span class="status-dot"></span> Available for projects & internships
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know more about my background, interests, and goals</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Hello! I'm currently studying Computer Science and software fundamentals. I enjoy building things that live on the internet, from interactive frontend interfaces to logical backends.
+            </p>
+            <p>
+              My goal is to continuously grow as an engineer, collaborate with passionate teams, and build software that provides seamless and delightful experiences for users worldwide.
+            </p>
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Mini Projects</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Commitment</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Curiosity</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-card">
+            <h3>Quick Highlights</h3>
+            <ul class="highlight-list">
+              <li>
+                <span class="highlight-icon">🎓</span>
+                <div>
+                  <strong>Student</strong>
+                  <p>Computer Science & IT Fundamentals</p>
+                </div>
+              </li>
+              <li>
+                <span class="highlight-icon">💻</span>
+                <div>
+                  <strong>Focus Areas</strong>
+                  <p>Web Development, UI/UX, Problem Solving</p>
+                </div>
+              </li>
+              <li>
+                <span class="highlight-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <p>Open to remote & hybrid opportunities</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Tools, technologies, and concepts I work with</p>
+        </div>
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <div class="skill-category">
+            <div class="category-header">
+              <span class="category-icon">🎨</span>
+              <h3>Frontend Development</h3>
+            </div>
+            <ul class="skill-tags">
+              <li>HTML5</li>
+              <li>CSS3 / Flexbox / Grid</li>
+              <li>JavaScript (ES6+)</li>
+              <li>Responsive Web Design</li>
+              <li>CSS Animations</li>
+            </ul>
+          </div>
+          <!-- Category 2 -->
+          <div class="skill-category">
+            <div class="category-header">
+              <span class="category-icon">⚙️</span>
+              <h3>Programming & Tools</h3>
+            </div>
+            <ul class="skill-tags">
+              <li>Python</li>
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>REST APIs</li>
+              <li>Chrome DevTools</li>
+            </ul>
+          </div>
+          <!-- Category 3 -->
+          <div class="skill-category">
+            <div class="category-header">
+              <span class="category-icon">💡</span>
+              <h3>Core Foundations</h3>
+            </div>
+            <ul class="skill-tags">
+              <li>Data Structures</li>
+              <li>Object-Oriented Programming</li>
+              <li>Problem Solving</li>
+              <li>Web Accessibility (a11y)</li>
+              <li>Clean Code Principles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of the works and applications I've built</p>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">📋</div>
+              <span class="project-badge">Productivity</span>
+            </div>
+            <h3 class="project-title">Smart Task Manager</h3>
+            <p class="project-description">
+              A clean task management app that helps students track assignments, set priorities, and organize daily goals with local storage persistence.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-text">Demo &rarr;</a>
+              <a href="#" class="btn-text">Source Code &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">🌦️</div>
+              <span class="project-badge">API Integration</span>
+            </div>
+            <h3 class="project-title">Live Weather Hub</h3>
+            <p class="project-description">
+              An interactive weather application fetching real-time atmospheric data, temperature charts, and 5-day forecasts with dynamic weather icons.
+            </p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Fetch API</span>
+              <span>CSS Flexbox</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-text">Demo &rarr;</a>
+              <a href="#" class="btn-text">Source Code &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">🎮</div>
+              <span class="project-badge">Interactive</span>
+            </div>
+            <h3 class="project-title">Knowledge Quest Quiz</h3>
+            <p class="project-description">
+              A responsive timed quiz app with interactive feedback, score tracking, randomized questions, and a high-score leaderboard.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS Grid</span>
+              <span>ES6 JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-text">Demo &rarr;</a>
+              <a href="#" class="btn-text">Source Code &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Timeline Section -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education & Journey</h2>
+          <p class="section-subtitle">My academic timeline and milestones</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Current &bull; Year 1 / Semester 1</span>
+              <h3 class="timeline-title">Bachelor of Science in Computer Science</h3>
+              <p class="timeline-desc">
+                Studying core programming fundamentals, computer systems, web technologies, and computational thinking.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Earlier</span>
+              <h3 class="timeline-title">High School Diploma / Pre-University</h3>
+              <p class="timeline-desc">
+                Completed secondary education with focused coursework in Mathematics, Sciences, and introductory programming.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Feel free to reach out for collaborations, questions, or just a chat</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always eager to learn, discuss new ideas, or contribute to interesting projects. Drop me a message and I'll get back to you as soon as possible!
+            </p>
+            <div class="info-list">
+              <div class="info-item">
+                <span class="info-icon">📧</span>
+                <div>
+                  <strong>Email</strong>
+                  <p>amie@example.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <p>Available worldwide (Remote)</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">⚡</span>
+                <div>
+                  <strong>Availability</strong>
+                  <p>Open to internships & junior roles</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-card">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Alex Morgan" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="alex@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Hi Amie, I'd like to talk about..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                Send Message
+              </button>
+              <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Amie. Built with clean HTML, CSS, and JavaScript.</p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">
+        Back to Top &uarr;
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
